@@ -22,6 +22,8 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e3e3e3' fill-opacity='0.5'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-family: var(--body);
     font-weight: var(--txt-regultar);
+    min-height: 100vh;
+    padding-top: 30px;
 }
 footer{
     background-color: var(--background-dark);
@@ -88,4 +90,47 @@ h6, .h-smaller{
 .smaller{
     font-family: 8px;
     line-height: 12px;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header__logo{
+    color: var(--main-color);
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.header__main-menu{
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.main-menu__list{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flex;
+}
+.selected{
+    background-color: var(--background-light);
+}
+.main-menu__item{
+    flex-grow: 1;
+    transition: background-color 0.25s;
+}
+.main-menu__item:hover{
+    background-color: var(--background-light);
+}
+.main-menu__link{
+    color: var(--text-dark);
+    text-align: center;
+    font-weight: var(--txt-light);
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
