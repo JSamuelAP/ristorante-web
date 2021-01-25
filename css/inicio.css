@@ -210,3 +210,6 @@
 .footer__grid-social{
     grid-area: social;
 }
+.footer__info {
+    justify-content: space-between;
+}
